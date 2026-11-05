@@ -43,9 +43,9 @@ por **simulación Monte Carlo** y evaluadas con un año de demanda que el modelo
 ¿Qué camión visita a qué clientes y en qué orden, con capacidad limitada y ventanas
 horarias? Resolví las **56 instancias de Solomon** con inserción, búsqueda local y **ALNS**, y
 comparé contra las mejores soluciones publicadas y contra el óptimo exacto de **Gurobi**.
-- ALNS queda a un **1,6%** en promedio de los récords, con 10 s por instancia, e iguala el récord
+- ALNS queda a un **1,5%** en promedio de los récords, con 10 s por instancia, e iguala el récord
   en las 17 instancias agrupadas.
-- En cortes de 25 y 50 clientes, Gurobi prueba el óptimo y ALNS lo alcanza en 9 de 12 casos.
+- En cortes de 25 y 50 clientes, Gurobi prueba el óptimo y ALNS lo alcanza en 11 de 12 casos.
 - App en Streamlit con una animación de las camionetas recorriendo sus rutas.
 
 `Python` `Gurobi` `MILP` `ALNS` `Metaheurísticas` `Streamlit` `Plotly` `pytest`
