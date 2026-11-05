@@ -27,7 +27,7 @@ modelo MILP, **Gurobi** lo resuelve y se genera un reporte ejecutivo.
 
 `Python` `Gurobi` `MILP` `Claude API` `Streamlit` `Plotly` `pytest`
 
-### [Inventario estocástico con demanda real de Walmart](https://github.com/CastilloFelipe/inventario-estocastico)
+### [Inventario estocástico con demanda real de Walmart](https://github.com/CastilloFelipe/inventario-estocastico) · [app en línea](https://inventario-estocastico.streamlit.app/)
 ¿La fórmula clásica de stock de seguridad entrega el servicio que promete? Lo probé con
 3.049 productos reales (dataset M5 de Walmart), comparándola con políticas (R, S) calibradas
 por **simulación Monte Carlo** y evaluadas con un año de demanda que el modelo no vio.
