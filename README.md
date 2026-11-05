@@ -41,6 +41,13 @@ detección y defensa de una anomalía.
 
 `Python` `pandas` `NumPy` `Matplotlib` `Jupyter`
 
+### [Pronóstico S&P 500 vs Dow Jones](https://github.com/TomasAllendeJ/sp500-dji-time-series-forecasting) · *en equipo con Tomás Allende y Juan Costa*
+Pronóstico de series de tiempo financieras comparando **Holt-Winters**, **ARIMA rolling**
+(walk-forward) y una red **LSTM**, con test de estacionariedad y de cointegración de
+Engle-Granger. Los modelos rolling bajan el MAPE de 12,75% (Holt-Winters) a cerca de 0,67%.
+
+`Python` `statsmodels` `pmdarima` `TensorFlow/Keras` `scikit-learn` `yfinance`
+
 ---
 
 ## 🛠️ Habilidades
