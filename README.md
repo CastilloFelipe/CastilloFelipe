@@ -39,7 +39,7 @@ por **simulación Monte Carlo** y evaluadas con un año de demanda que el modelo
 
 `Python` `NumPy` `Monte Carlo` `Bootstrap` `pandas` `SciPy` `Streamlit` `pytest`
 
-### [Ruteo de vehículos con ventanas horarias (VRPTW)](https://github.com/CastilloFelipe/ruteo-vehiculos)
+### [Ruteo de vehículos con ventanas horarias (VRPTW)](https://github.com/CastilloFelipe/ruteo-vehiculos) · [app en línea](https://ruteo-vehiculos.streamlit.app/)
 ¿Qué camión visita a qué clientes y en qué orden, con capacidad limitada y ventanas
 horarias? Resolví las **56 instancias de Solomon** con inserción, búsqueda local y **ALNS**, y
 comparé contra las mejores soluciones publicadas y contra el óptimo exacto de **Gurobi**.
