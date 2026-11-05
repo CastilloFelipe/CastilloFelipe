@@ -39,6 +39,17 @@ por **simulación Monte Carlo** y evaluadas con un año de demanda que el modelo
 
 `Python` `NumPy` `Monte Carlo` `Bootstrap` `pandas` `SciPy` `Streamlit` `pytest`
 
+### [Ruteo de vehículos con ventanas horarias (VRPTW)](https://github.com/CastilloFelipe/ruteo-vehiculos)
+¿Qué camión visita a qué clientes y en qué orden, con capacidad limitada y ventanas
+horarias? Resolví las **56 instancias de Solomon** con inserción, búsqueda local y **ALNS**, y
+comparé contra las mejores soluciones publicadas y contra el óptimo exacto de **Gurobi**.
+- ALNS queda a un **1,6%** en promedio de los récords, con 10 s por instancia, e iguala el récord
+  en las 17 instancias agrupadas.
+- En cortes de 25 y 50 clientes, Gurobi prueba el óptimo y ALNS lo alcanza en 9 de 12 casos.
+- App en Streamlit con una animación de las camionetas recorriendo sus rutas.
+
+`Python` `Gurobi` `MILP` `ALNS` `Metaheurísticas` `Streamlit` `Plotly` `pytest`
+
 ### [Monitor de Atrasos Logísticos](https://github.com/CastilloFelipe/monitor-atrasos-logisticos) · [app en línea](https://monitor-atrasos-logisticos.onrender.com)
 Detecta en tiempo real los envíos con riesgo de atraso: carga de datos a SQL, modelo de
 **Random Forest** explicado con SHAP, API REST y dashboard con KPIs y alertas. Además
@@ -67,7 +78,7 @@ Engle-Granger. Los modelos rolling bajan el MAPE de 12,75% (Holt-Winters) a cerc
 | Área | Herramientas |
 |---|---|
 | Programación y datos | Python (pandas, NumPy, scikit-learn), SQL, Jupyter |
-| Optimización | Programación lineal y entera mixta, Gurobi (`gurobipy`), Solver de Excel |
+| Optimización | Programación lineal y entera mixta, Gurobi (`gurobipy`), ruteo de vehículos (VRPTW), metaheurísticas (ALNS, búsqueda local), Solver de Excel |
 | Modelos estocásticos | Simulación Monte Carlo, bootstrap (diario y por bloques), políticas de inventario (R, S), nivel de servicio y fill rate |
 | Analítica y BI | Power BI (intermedio), Excel (intermedio: tablas dinámicas, Solver), Matplotlib, Plotly |
 | Desarrollo | FastAPI, Streamlit, Git y GitHub Actions, pytest |
