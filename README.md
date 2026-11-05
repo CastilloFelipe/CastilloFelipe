@@ -27,6 +27,18 @@ modelo MILP, **Gurobi** lo resuelve y se genera un reporte ejecutivo.
 
 `Python` `Gurobi` `MILP` `Claude API` `Streamlit` `Plotly` `pytest`
 
+### [Inventario estocástico con demanda real de Walmart](https://github.com/CastilloFelipe/inventario-estocastico)
+¿La fórmula clásica de stock de seguridad entrega el servicio que promete? Lo probé con
+3.049 productos reales (dataset M5 de Walmart), comparándola con políticas (R, S) calibradas
+por **simulación Monte Carlo** y evaluadas con un año de demanda que el modelo no vio.
+- La fórmula prometía 95% de servicio por ciclo y logró 90,5%. La brecha se asocia a que la
+  demanda de días cercanos está correlacionada, algo que la fórmula supone que no pasa.
+- Un **bootstrap por bloques** subió el servicio a 93,4%, a cambio de más inventario.
+- Simulador validado contra la teoría de Poisson, curva inventario vs servicio, guía de
+  conceptos y app en Streamlit.
+
+`Python` `NumPy` `Monte Carlo` `Bootstrap` `pandas` `SciPy` `Streamlit` `pytest`
+
 ### [Monitor de Atrasos Logísticos](https://github.com/CastilloFelipe/monitor-atrasos-logisticos) · [app en línea](https://monitor-atrasos-logisticos.onrender.com)
 Detecta en tiempo real los envíos con riesgo de atraso: carga de datos a SQL, modelo de
 **Random Forest** explicado con SHAP, API REST y dashboard con KPIs y alertas. Además
@@ -56,6 +68,7 @@ Engle-Granger. Los modelos rolling bajan el MAPE de 12,75% (Holt-Winters) a cerc
 |---|---|
 | Programación y datos | Python (pandas, NumPy, scikit-learn), SQL, Jupyter |
 | Optimización | Programación lineal y entera mixta, Gurobi (`gurobipy`), Solver de Excel |
+| Modelos estocásticos | Simulación Monte Carlo, bootstrap (diario y por bloques), políticas de inventario (R, S), nivel de servicio y fill rate |
 | Analítica y BI | Power BI (intermedio), Excel (intermedio: tablas dinámicas, Solver), Matplotlib, Plotly |
 | Desarrollo | FastAPI, Streamlit, Git y GitHub Actions, pytest |
 | IA aplicada | LLMs con *tool use* (Claude), evaluación de modelos, ML explicable (SHAP) |
