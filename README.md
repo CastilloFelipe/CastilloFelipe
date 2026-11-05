@@ -17,7 +17,7 @@ operaciones o analítica.
 
 ## 🚚 Proyectos destacados
 
-### [Agente de Optimización de Red Logística](https://github.com/CastilloFelipe/supply-chain-agent)
+### [Agente de Optimización de Red Logística](https://github.com/CastilloFelipe/supply-chain-agent) · [app en línea](https://llm-supply-chain-agent.streamlit.app/)
 Simulador *what-if* para redes de distribución: haces una pregunta de negocio ("¿qué pasa
 si cerramos el CD de La Serena y el diésel sube 15%?"), un LLM la traduce a cambios en un
 modelo MILP, **Gurobi** lo resuelve y se genera un reporte ejecutivo.
